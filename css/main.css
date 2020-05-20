@@ -1,15 +1,18 @@
 /*Class Rules*/
 
 .logo {
-	width: 12%;
-	margin-left: 10px;
+	width: 15%;
+	margin-top: 1%;
+	margin-left: 3%;
+	
 }
 
 .rightNav {
 	float: right;
-	margin-top: 50px;
-	margin-right: 30px;
-	margin-left: 15px;
+	margin-top: 8%;
+	margin-right: 3%;
+	margin-left: 1%;
+
 }
 
 .active {
@@ -22,10 +25,12 @@
 	margin: auto;
 }
 
-.Hero {
-		max-width: 80%;
-		margin: auto;
-	}
+.profilePic {
+	width: 70%;
+	height: auto;
+	margin: auto;
+	display: block;
+}
 
 .content {
 	max-width: 70%;
@@ -33,14 +38,14 @@
 }
 
 .cta {
-	max-width: 60%;
+	width: 60%;
 	margin: auto;
 	text-align: center;
+	display: block;
 }
 
 .emailButton {
-	border-bottom: 1px solid #f26419;
-	transition-duration: 0.2s;
+	/*border-bottom: 1px solid #f26419;*/
 }
 
 .emph {
@@ -53,6 +58,32 @@
 	font-weight: bolder;
 }
 
+.title {
+	text-align: center;
+}
+
+.sample {
+	border-bottom: 1px solid #36605a;
+	padding-bottom: 5%;
+	margin-bottom: 5%;
+	width: 100%;
+}
+
+.playGallery {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.item {
+	text-align: center;
+	width: 20%;
+	height: 
+	border: 1px solid blue;
+}
+
 /*Hover Over Rules*/
 
 nav a:hover {
@@ -60,9 +91,38 @@ nav a:hover {
 }
 
 .emailButton:hover {
-	border: 1px solid #f26419;
+	border-bottom: 2px solid #f26419;
 }
 
+/*Responsive Changes*/
+
+@media only screen and (max-width: 800px) {
+
+  .logo {
+	width: 22%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav.rightNav {
+	float: none;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.greeting{
+	display: block;
+	margin-top: 2%;
+  }
+
+  .profilePic {
+	width: 90%;
+	height: auto;
+	margin: auto;
+	display: block;
+}
+}
 
 /*Element Rules*/
 
@@ -78,6 +138,10 @@ footer {
 	background-color: #dadad9;
 }
 
+i {
+	font-size: 1.1em;
+}
+
 a {
   text-decoration: none;
   color: #f26419;
@@ -87,13 +151,12 @@ a {
   padding: 5px 5px;
   display: inline;
   margin: 10px;
-  transition-duration: 0.2s; 
 }
 
 h1 {
 	font-family: 'Bitter', serif;
 	font-weight: 700;
-	font-size: 32px;
+	font-size: 2em;
 	color: #36605a;
 }
 
@@ -101,40 +164,40 @@ h1 {
 h2 {
 	font-family: 'Bitter', serif;
 	font-weight: 500;
-	font-size: 28px;
+	font-size: 1.5em;
 	color: #f26419;
 }
 
 h3 {
 	font-family: 'Bitter', serif;
 	font-weight: 500;
-	font-size: 28px;
+	font-size: 1.5em;
 	color: #36605a;
 }
 
 h4 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 1.25em;
 	color: #f26419;
 }
 
 h5 {
 	font-family: 'Bitter', serif;
 	font-weight: 500;
-	font-size: 28px;
+	font-size: 1.5em;
 	color:#062a2b;
 }
 
 h6 {
 	font-family: 'Open Sans', serif;
-	font-size: 14px;
+	font-size: 1em;
 	color: #dadad9;
 }
 p {
 	font-family: 'Open-Sans', sans-serif;
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 1.1em;
 	color: #181c20;
 }
 
@@ -144,4 +207,12 @@ footer {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	text-align: center;
+}
+
+iframe {
+	width: 100%;
+	height: 30em;
+	margin: auto;
+	display: block;
+	border: none;
 }
