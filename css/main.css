@@ -74,14 +74,20 @@
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	align-items: center;
 }
 
 .item {
 	text-align: center;
-	width: 20%;
-	height: 
-	border: 1px solid blue;
+	width: 30%;
+}
+
+.itemPic {
+	width: 80%;
+	height: auto;
+}
+
+.itemText {
+	text-align: justify;
 }
 
 /*Hover Over Rules*/
