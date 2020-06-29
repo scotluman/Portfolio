@@ -122,12 +122,26 @@ nav.rightNav {
 	margin-top: 2%;
   }
 
-  .profilePic {
+.profilePic {
 	width: 90%;
 	height: auto;
 	margin: auto;
 	display: block;
 }
+
+.playGallery {
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	width: 100%;
+}
+
+.itemText {
+	text-align: center;
+}
+
 }
 
 /*Element Rules*/
